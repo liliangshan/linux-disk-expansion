@@ -8,6 +8,7 @@
 - 支持LVM和非LVM分区
 - 提供安全的磁盘扩展操作
 - 自动检测当前分区状态
+- 支持指定目录扩容
 
 ## 使用方法
 
@@ -19,7 +20,12 @@ chmod +x linux-disk-expansion
 
 2. 以root权限运行程序：
 ```bash
+# 扩展根分区
 sudo ./linux-disk-expansion
+
+# 扩展指定目录
+sudo ./linux-disk-expansion /home
+sudo ./linux-disk-expansion /var
 ```
 
 3. 程序会显示当前分区的使用情况
